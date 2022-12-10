@@ -1,7 +1,7 @@
 local opt = vim.opt -- for conciseness
 
 -- line numbers
-opt.relativenumber = true
+opt.relativenumber = true 
 opt.number = true
 
 -- tabs & indentation
@@ -22,8 +22,8 @@ opt.cursorline = true
 
 -- appearance
 opt.termguicolors = false
-opt.background = "dark"
-opt.signcolumn = "yes"
+
+
 
 -- backspace
 opt.backspace = "indent,eol,start"
@@ -36,7 +36,6 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
-
 
 
 

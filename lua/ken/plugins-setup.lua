@@ -31,13 +31,27 @@ return packer.startup(function(use)
   -- packer can manage itself
   use("wbthomason/packer.nvim")
 
+  use("nvim-lua/plenary.nvim")
+
   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
   -- tmux & split window navigation
   use("christoomey/vim-tmux-navigator")
 
   use("szw/vim-maximizer") -- maximizes and restores current window
+
+  -- essential plugins
+  use("tpope/vim-surround") -- https://github.com/tpope/vim-surround
+  use("vim-scripts/ReplaceWithRegister") -- use grw to replace
+
+  -- commenting with gc
+  use("numToStr/Comment.nvim") -- https://github.com/numToStr/Comment.nvim
+
+  -- file explorer
+  use("nvim-tree/nvim-tree.lua") -- https://github.com/nvim-tree/nvim-tree.lua
+
   if packer_bootstrap then
     require("packer").sync()
   end
 end)
+
