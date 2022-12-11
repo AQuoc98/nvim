@@ -21,8 +21,9 @@ opt.smartcase = true
 opt.cursorline = true
 
 -- appearance
-opt.termguicolors = false
-
+opt.termguicolors = true
+opt.background = "dark"
+opt.signcolumn = "yes"
 
 
 -- backspace
