@@ -1,16 +1,19 @@
-require("ken.plugins-setup")
-require("ken.core.options")
-require("ken.core.keymaps")
-require("ken.core.colorscheme")
-require("ken.plugins.comment")
-require("ken.plugins.nvim-tree")
-require("ken.plugins.lualine")
-require("ken.plugins.telescope")
-require("ken.plugins.nvim-cmp")
-require("ken.plugins.lsp.mason")
-require("ken.plugins.lsp.lspsaga")
-require("ken.plugins.lsp.lspconfig")
-require("ken.plugins.lsp.null-ls")
-require("ken.plugins.autopairs")
-require("ken.plugins.treesitter")
-require("ken.plugins.gitsigns")
+require('base')
+require('highlights')
+require('maps')
+require('plugins')
+
+-- clipboard
+local has = function(x)
+  return vim.fn.has(x) == 1
+end
+
+local is_mac = has "macunix"
+local is_win = has "win32"
+
+if is_mac then
+  require('macos')
+end
+if is_win then
+  require('windows')
+end
