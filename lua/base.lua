@@ -13,9 +13,9 @@ vim.opt.backup = false
 vim.opt.showcmd = true
 vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
-vim.opt.expandtab = true 
+vim.opt.expandtab = true
 vim.opt.scrolloff = 10
-vim.opt.shell = 'fish'
+vim.opt.shell = 'zsh'
 vim.opt.backupskip = '/tmp/*,/private/tmp/*'
 vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true
@@ -32,13 +32,9 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 
 -- turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
-	pattern = '*',
-	command = "set nopaste"
+  pattern = '*',
+  command = "set nopaste"
 })
 
 -- add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
-
-
-
-

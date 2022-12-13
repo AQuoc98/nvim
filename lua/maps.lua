@@ -14,9 +14,9 @@ keymap.set('n', 'dw', 'vb"_d')
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- new tab
-keymap.set('n', 'te', ':tabedit<Return>', {silent = true})
-keymap.set('n', 'ss', ':split<Return><C-w>w', {silent = true})
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w', {silent = true})
+keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
+keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
+keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
 -- move window
 keymap.set('n', '<Space>', '<C-w>w')
 keymap.set('', 's<left>', '<C-w>h')
@@ -36,3 +36,4 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- quit to insert mode
 keymap.set('i', 'jk', '<ESC>')
+keymap.set('n', 'lg', ':LazyGit<Return>', { silent = true })
