@@ -36,5 +36,6 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
   use 'lewis6991/gitsigns.nvim'
   use 'kdheepak/lazygit.nvim'
+  use 'nvim-tree/nvim-tree.lua'
 
 end)
