@@ -37,6 +37,6 @@ keymap.set('n', '<C-w>e', '<C-w>=')
 
 -- quit to insert mode
 keymap.set('i', 'jk', '<ESC>')
-keymap.set('n', 'lg', ':LazyGit<Return>', { silent = true })
+keymap.set('n', '<Space>gg', ':LazyGit<Return>', { silent = true })
 
 keymap.set('n', '<Space>e', ':NvimTreeToggle<Return>', { silent = true })
