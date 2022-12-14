@@ -88,7 +88,7 @@ nvim_lsp.tsserver.setup {
 
 nvim_lsp.eslint.setup {
   on_attach = on_attach,
-  filetypes = { "javascript", "javascriptreact", "javascript.jsx" },
+  filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
   cmd = { "vscode-eslint-language-server", "--stdio" },
 }
 
