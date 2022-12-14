@@ -22,11 +22,13 @@ packer.startup(function(use)
   use 'hrsh7th/nvim-cmp' -- completion
   use 'neovim/nvim-lspconfig' -- config eslint, completion in here
   use 'jose-elias-alvarez/null-ls.nvim'
-  use 'MunifTanjim/prettier.nvim'
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   use 'numToStr/Comment.nvim'
-  use 'nvim-treesitter/nvim-treesitter'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'nvim-telescope/telescope.nvim'

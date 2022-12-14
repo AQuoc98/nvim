@@ -29,6 +29,15 @@ nvimtree.setup({
       },
     },
   },
+
+  view = {
+    adaptive_size = true,
+    mappings = {
+      list = {
+        { key = "sh", action = "<C-w>h" },
+      },
+    },
+  },
   -- 	git = {
   -- 		ignore = false,
   -- 	},
