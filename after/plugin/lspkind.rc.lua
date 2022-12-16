@@ -1,13 +1,11 @@
-require('lspkind').init({
-  -- DEPRECATED (use mode instead): enables text annotations
+local status, lspkind = pcall(require, "lspkind")
+if (not status) then return end
+
+lspkind.init({
+  -- enables text annotations
   --
   -- default: true
-  -- with_text = true,
-
-  -- defines how annotations are shown
-  -- default: symbol
-  -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
-  mode = 'symbol_text',
+  mode = 'symbol',
 
   -- default symbol map
   -- can be either 'default' (requires nerd-fonts font) or
@@ -20,30 +18,31 @@ require('lspkind').init({
   --
   -- default: {}
   symbol_map = {
-    Text = "Ôùæ",
-    Method = "Ôö¶",
-    Function = "Ôûî",
-    Constructor = "Ôê£",
-    Field = "Ô∞†",
-    Variable = "Ôî™",
-    Class = "Ô¥Ø",
-    Interface = "ÔÉ®",
-    Module = "Ôíá",
-    Property = "Ô∞†",
-    Unit = "Ô•¨",
-    Value = "Ô¢ü",
-    Enum = "ÔÖù",
-    Keyword = "Ô†ä",
-    Snippet = "Ôëè",
-    Color = "Ô£ó",
-    File = "Ôúò",
-    Reference = "ÔúÜ",
-    Folder = "Ôùä",
-    EnumMember = "ÔÖù",
-    Constant = "Ô£æ",
-    Struct = "Ô≠Ñ",
-    Event = "ÔÉß",
-    Operator = "Ôöî",
-    TypeParameter = ""
+    Text = "",
+    Method = "",
+    Function = "",
+    Constructor = "",
+    Field = "ﰠ",
+    Variable = "",
+    Class = "ﴯ",
+    Interface = "",
+    Module = "",
+    Property = "ﰠ",
+    Unit = "塞",
+    Value = "",
+    Enum = "",
+    Keyword = "",
+    Snippet = "",
+    Color = "",
+    File = "",
+    Reference = "",
+    Folder = "",
+    EnumMember = "",
+    Constant = "",
+    Struct = "פּ",
+    Event = "",
+    Operator = "",
+    TypeParameter = ""
   },
 })
+

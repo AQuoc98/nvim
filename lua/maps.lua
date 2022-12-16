@@ -17,6 +17,7 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
 keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
+
 -- move window
 keymap.set('n', '<Space>', '<C-w>w')
 keymap.set('', 's<left>', '<C-w>h')
@@ -37,6 +38,9 @@ keymap.set('n', '<C-w>e', '<C-w>=')
 
 -- quit to insert mode
 keymap.set('i', 'jk', '<ESC>')
+
+-- open lazygit
 keymap.set('n', '<Space>gg', ':LazyGit<Return>', { silent = true })
 
+-- open nvim tree
 keymap.set('n', '<Space>e', ':NvimTreeToggle<Return>', { silent = true })
